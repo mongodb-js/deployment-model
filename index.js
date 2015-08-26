@@ -1,7 +1,7 @@
 var AmpersandModel = require('ampersand-model');
 var AmpersandCollection = require('ampersand-rest-collection');
 var getInstanceId = require('mongodb-instance-model').getId;
-var InstanceCollection = require('mongodb-instance-model');
+var InstanceCollection = require('mongodb-instance-model').Collection;
 var ENDS_WITH_NUMBER = /\d$/;
 
 var dataTypes = {

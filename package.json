@@ -2,7 +2,7 @@
   "name": "mongodb-deployment-model",
   "description": "MongoDB deployment model.",
   "author": "Lucas Hrabovsky <lucas@mongodb.com>",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "bugs": "https://github.com/mongodb-js/mongodb-deployment-model/issues",
   "homepage": "https://github.com/mongodb-js/mongodb-deployment-model",
   "repository": "git://github.com/mongodb-js/mongodb-deployment-model.git",

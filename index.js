@@ -46,7 +46,9 @@ var Deployment = AmpersandModel.extend({
     maybe_sharded: {
       deps: ['sharding', 'replicaset'],
       fn: function() {
-        if (this.sharding) return true;
+        if (this.sharding) {
+          return true;
+        }
         return ENDS_WITH_NUMBER.test(this.rs || '');
       }
     },
@@ -59,8 +61,12 @@ var Deployment = AmpersandModel.extend({
     type: {
       deps: ['sharding', 'replicaset'],
       fn: function() {
-        if (this.sharding) return 'cluster';
-        if (this.replicaset) return 'replicaset';
+        if (this.sharding) {
+          return 'cluster';
+        }
+        if (this.replicaset) {
+          return 'replicaset';
+        }
         return 'standalone';
       }
     },
@@ -71,7 +77,9 @@ var Deployment = AmpersandModel.extend({
       deps: ['instance_ids'],
       fn: function() {
         var first = this.instances.at(0);
-        if (!first) return undefined;
+        if (!first) {
+          return undefined;
+        }
         return first.replicaset;
       }
     },

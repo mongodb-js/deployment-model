@@ -32,6 +32,20 @@ exports.get = function(id, done) {
   }, done);
 };
 
+exports.getOrCreate = function(connection, done) {
+  exports.get(connection.instance_id, function(err, deployment) {
+    if (err) {
+      return done(err);
+    }
+
+    if (deployment) {
+      return done(null, deployment);
+    }
+
+    exports.create(connection, done);
+  });
+};
+
 exports.clear = store.clear;
 exports.find = store.find;
 exports.findOne = store.findOne;

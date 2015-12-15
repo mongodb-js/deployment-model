@@ -2,6 +2,7 @@ var Probe = require('./lib/probe');
 var store = require('./lib/store');
 exports = require('./lib/model');
 
+var Instance = require('mongodb-instance-model');
 exports.canonicalize = require('./lib/canonicalize');
 
 /**
@@ -20,6 +21,7 @@ exports.create = function(connection, done) {
  * @api public
  */
 exports.get = function(id, done) {
+  id = Instance.getId(id);
   store.findOne({
     $or: [
       {

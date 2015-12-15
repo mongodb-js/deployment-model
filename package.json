@@ -26,7 +26,7 @@
     "debug": "^2.2.0",
     "lodash": "^3.10.1",
     "mongodb-connection-model": "^3.0.9",
-    "mongodb-instance-model": "^2.1.2",
+    "mongodb-instance-model": "^2.1.6",
     "mongodb-replicaset": "^0.1.0",
     "sift": "^3.0.0"
   },

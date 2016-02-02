@@ -24,7 +24,7 @@
     "ampersand-rest-collection": "^5.0.0",
     "async": "^1.5.0",
     "debug": "^2.2.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.2.0",
     "mongodb-connection-model": "^3.0.9",
     "mongodb-instance-model": "^2.1.6",
     "mongodb-replicaset": "^0.1.0",

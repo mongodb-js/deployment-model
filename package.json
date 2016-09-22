@@ -25,7 +25,7 @@
     "async": "^2.0.1",
     "debug": "^2.2.0",
     "lodash": "^4.8.0",
-    "mongodb-connection-model": "^4.0.0",
+    "mongodb-connection-model": "^6.0.0",
     "mongodb-instance-model": "^3.0.0",
     "mongodb-replicaset": "^0.1.0",
     "sift": "^3.0.0"

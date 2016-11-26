@@ -31,7 +31,7 @@
     "sift": "^3.0.0"
   },
   "devDependencies": {
-    "eslint-config-mongodb-js": "^2.0.0",
+    "eslint-config-mongodb-js": "^2.1.1",
     "mocha": "^3.0.2",
     "mongodb-js-fmt": "^0.0.3",
     "mongodb-js-precommit": "^0.2.8",
